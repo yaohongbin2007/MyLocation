@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		B134BAED1B3D196F00AC3E0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BAEC1B3D196F00AC3E0B /* main.m */; };
 		B134BAF01B3D196F00AC3E0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BAEF1B3D196F00AC3E0B /* AppDelegate.m */; };
-		B134BAF31B3D196F00AC3E0B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BAF21B3D196F00AC3E0B /* FirstViewController.m */; };
+		B134BAF31B3D196F00AC3E0B /* CurrentLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BAF21B3D196F00AC3E0B /* CurrentLocationViewController.m */; };
 		B134BAF61B3D196F00AC3E0B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BAF51B3D196F00AC3E0B /* SecondViewController.m */; };
 		B134BAF91B3D196F00AC3E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B134BAF71B3D196F00AC3E0B /* Main.storyboard */; };
 		B134BAFB1B3D196F00AC3E0B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B134BAFA1B3D196F00AC3E0B /* Images.xcassets */; };
 		B134BAFE1B3D196F00AC3E0B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B134BAFC1B3D196F00AC3E0B /* LaunchScreen.xib */; };
 		B134BB0A1B3D196F00AC3E0B /* MyLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B134BB091B3D196F00AC3E0B /* MyLocationTests.m */; };
+		B134BB141B3D201000AC3E0B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B134BB131B3D201000AC3E0B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,8 @@
 		B134BAEC1B3D196F00AC3E0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B134BAEE1B3D196F00AC3E0B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B134BAEF1B3D196F00AC3E0B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B134BAF11B3D196F00AC3E0B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		B134BAF21B3D196F00AC3E0B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		B134BAF11B3D196F00AC3E0B /* CurrentLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentLocationViewController.h; sourceTree = "<group>"; };
+		B134BAF21B3D196F00AC3E0B /* CurrentLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurrentLocationViewController.m; sourceTree = "<group>"; };
 		B134BAF41B3D196F00AC3E0B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		B134BAF51B3D196F00AC3E0B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		B134BAF81B3D196F00AC3E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +44,7 @@
 		B134BB031B3D196F00AC3E0B /* MyLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B134BB081B3D196F00AC3E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B134BB091B3D196F00AC3E0B /* MyLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLocationTests.m; sourceTree = "<group>"; };
+		B134BB131B3D201000AC3E0B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B134BB141B3D201000AC3E0B /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +89,8 @@
 			children = (
 				B134BAEE1B3D196F00AC3E0B /* AppDelegate.h */,
 				B134BAEF1B3D196F00AC3E0B /* AppDelegate.m */,
-				B134BAF11B3D196F00AC3E0B /* FirstViewController.h */,
-				B134BAF21B3D196F00AC3E0B /* FirstViewController.m */,
+				B134BAF11B3D196F00AC3E0B /* CurrentLocationViewController.h */,
+				B134BAF21B3D196F00AC3E0B /* CurrentLocationViewController.m */,
 				B134BAF41B3D196F00AC3E0B /* SecondViewController.h */,
 				B134BAF51B3D196F00AC3E0B /* SecondViewController.m */,
 				B134BAF71B3D196F00AC3E0B /* Main.storyboard */,
@@ -119,6 +122,7 @@
 		B134BB071B3D196F00AC3E0B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B134BB131B3D201000AC3E0B /* CoreLocation.framework */,
 				B134BB081B3D196F00AC3E0B /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -226,7 +230,7 @@
 			files = (
 				B134BAF61B3D196F00AC3E0B /* SecondViewController.m in Sources */,
 				B134BAF01B3D196F00AC3E0B /* AppDelegate.m in Sources */,
-				B134BAF31B3D196F00AC3E0B /* FirstViewController.m in Sources */,
+				B134BAF31B3D196F00AC3E0B /* CurrentLocationViewController.m in Sources */,
 				B134BAED1B3D196F00AC3E0B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +290,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eric Mu (PM26J32ZKC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eric Mu (PM26J32ZKC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -305,9 +310,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "6e764c90-29f1-478b-811a-9d9b0c5429d2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -329,7 +335,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Eric Mu (PM26J32ZKC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Eric Mu (PM26J32ZKC)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -342,8 +349,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "6e764c90-29f1-478b-811a-9d9b0c5429d2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -354,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -364,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
